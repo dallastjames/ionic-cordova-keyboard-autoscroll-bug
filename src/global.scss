@@ -24,3 +24,18 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+// * Angular Material */
+@import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
+
+// Angular material tweaks for form fields with floating labels
+mat-form-field {
+  width: 100%;
+}
+mat-label {
+  font-family: var(--ion-font-family, inherit);
+  color: var(--darkBlue);
+}
+.mat-form-field-appearance-fill  .mat-form-field-flex {
+  background: transparent;
+}
