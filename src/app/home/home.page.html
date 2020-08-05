@@ -1,27 +1,53 @@
+<script src="home.page.spec.ts"></script>
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Keyboard offset issue.
+      Keyboard over field issue.
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Filler Card</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Filler Card</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Filler Card</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Filler Card</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
   <ion-card class="login-card">
     <ion-card-header>
-      <ion-card-title>Select angular material input field and inspect ion-content. You will see a --keyboard-offset added that does not happen on ion-input.</ion-card-title>
+      <ion-card-title>Select input field and watch keyboard positioning over the form. Type a letter, then position changes and form is visible.</ion-card-title>
     </ion-card-header>
 
     <ion-card-content class="loginForm form-wrapper">
       <form class="no-outline" novalidate>
         <mat-form-field appearance="fill" >
-          <mat-label>Angular Material Field</mat-label>
+          <mat-label>Angular Material Field 1</mat-label>
           <input matInput>
         </mat-form-field>
-        <ion-item>
-          <ion-label position="floating">Ion-input field</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
+        <mat-form-field appearance="fill" >
+          <mat-label>Angular Material Field 2</mat-label>
+          <input matInput>
+        </mat-form-field>
       </form>
     </ion-card-content>
   </ion-card>
